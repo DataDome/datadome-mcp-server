@@ -96,7 +96,3 @@ export function parseTimeRange(range: string): DateRange {
 export function formatDateForApi(date: Date): string {
   return date.toISOString().split(".")[0] + "Z";
 }
-
-export function formatDateForElasticsearch(date: Date): string {
-  return date.toISOString();
-}

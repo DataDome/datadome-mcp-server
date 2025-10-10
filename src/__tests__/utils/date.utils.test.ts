@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
-import { parseTimeRange, formatDateForApi, formatDateForElasticsearch } from '../../utils/date.utils.js';
+import { parseTimeRange, formatDateForApi } from '../../utils/date.utils.js';
 
 describe('date.utils', () => {
   describe('parseTimeRange', () => {
@@ -292,30 +292,6 @@ describe('date.utils', () => {
       const result = formatDateForApi(date);
 
       expect(result).toBe('2025-01-01T01:01:01Z');
-    });
-  });
-
-  describe('formatDateForElasticsearch', () => {
-    it('should format date in ISO 8601 format', () => {
-      const date = new Date('2025-10-07T15:30:45.123Z');
-      const result = formatDateForElasticsearch(date);
-
-      expect(result).toBe('2025-10-07T15:30:45.123Z');
-    });
-
-    it('should preserve milliseconds', () => {
-      const date = new Date('2025-10-07T15:30:45.999Z');
-      const result = formatDateForElasticsearch(date);
-
-      expect(result).toContain('.999');
-      expect(result).toBe('2025-10-07T15:30:45.999Z');
-    });
-
-    it('should handle midnight correctly', () => {
-      const date = new Date('2025-10-07T00:00:00.000Z');
-      const result = formatDateForElasticsearch(date);
-
-      expect(result).toBe('2025-10-07T00:00:00.000Z');
     });
   });
 });
