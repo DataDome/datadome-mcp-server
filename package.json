@@ -22,12 +22,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DataDome/datadome-public-mcp-server.git"
+    "url": "git+https://github.com/DataDome/datadome-mcp-server.git"
   },
   "bugs": {
-    "url": "https://github.com/DataDome/datadome-public-mcp-server/issues"
+    "url": "https://github.com/DataDome/datadome-mcp-server/issues"
   },
-  "homepage": "https://github.com/DataDome/datadome-public-mcp-server#readme",
+  "homepage": "https://github.com/DataDome/datadome-mcp-server#readme",
   "engines": {
     "node": ">=18.18"
   },
