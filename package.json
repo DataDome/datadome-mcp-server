@@ -1,8 +1,33 @@
 {
-  "name": "datadome-mcp-server",
+  "name": "@datadome/datadome-mcp-server",
   "version": "1.0.0",
-  "private": true,
+  "description": "DataDome MCP server for interacting with the DataDome Management API",
   "type": "module",
+  "main": "dist/main.js",
+  "bin": {
+    "datadome-mcp-server": "dist/main.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "datadome",
+    "mcp",
+    "model-context-protocol",
+    "security",
+    "bot-detection",
+    "api"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DataDome/datadome-mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DataDome/datadome-mcp-server/issues"
+  },
+  "homepage": "https://github.com/DataDome/datadome-mcp-server#readme",
   "engines": {
     "node": ">=18.18"
   },
